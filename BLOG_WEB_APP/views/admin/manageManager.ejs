@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Admin</title>
+  <link rel="stylesheet" href="../css/admin.css" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <ul>
+        <li> <i class="fas fa-user"></i>
+           <span class="nav-item">Admin</span>
+        </a></li>
+        <li><a href="#">
+          <i class="fas fa-th-list"></i>
+          <span class="nav-item">Manager</span>
+        </a></li>
+
+        <li><a href="/admin/manageTopic">
+          <i class="fas fa-th-list"></i>
+          <span class="nav-item">Topics</span>
+        </a></li>         
+         
+        <li><a href="/logout_admin" class="logout">
+          <i class="fas fa-sign-out-alt"></i>
+          <span class="nav-item">Logout</span>
+        </a></li>
+      </ul>
+    </nav>
+
+    <section class="main">
+      <div class="main-top">
+        <h1>Managers</h1>
+        <a class="btn" href="/admin/addManager">Create New Manager</a>
+       </div>
+
+      <div class="main-skills">
+        <% managers.forEach((manager) => { %>
+        <div class="card">
+           <h3><%= manager.name %></h3>
+          
+           <form action="deleteManager/<%= manager._id%>">
+           <button onclick="deleteFunction()">Delete</button>
+           </form>
+        </div>
+           <% }) %>
+      </div>
+    </section>
+  </div>
+ 
+      <script>
+        function deleteFunction() {
+          confirm("Delete Manager");
+        }
+      </script>
+   
+  </body>
+</html>

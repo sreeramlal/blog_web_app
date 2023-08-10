@@ -1,0 +1,260 @@
+body {
+    font-family: Arial, sans-serif;
+     
+  background-image: url('https://img.freepik.com/free-photo/old-camera-notebook-laptop-with-blue-pencil-cup-cappuccino-white-background_23-2147979092.jpg?w=740&t=st=1691143386~exp=1691143986~hmac=1876e0fc66cc331f7a88d63485b52b1ba480a40f6b391b61dc7399e4c61b63df');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  
+     margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+ 
+
+h1 {
+    color: #393E46 ;
+}
+.message{
+    color: red;
+}
+
+form {
+    max-width: 60%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid #6a84a8;
+
+  
+}
+.form_log_sign{
+    max-width: 30%;
+
+
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+}
+
+button[type="submit"] {
+    background-color: #393E46;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.btn{
+    background-color: #393E46;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+
+}
+
+button[type="submit"]:hover {
+    background-color: #393E46;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.h4_head {
+    color: #333;
+}
+
+.btnreg {
+    background-color: #393E46;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+     display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    width: 34%;
+}
+ 
+.btnreg:hover {
+    background-color: #393E46;
+}
+
+.h1_head {
+    float: left;
+    margin-left: 40%;
+    margin-top: 2.5%;
+}
+
+.blogcreate {
+    margin-left: 5%;
+}
+
+.blog-container {
+    max-width: 70%;
+    margin: 5% 10%;
+    background-color: #fff;
+        padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.blog-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+.blog-description {
+    color: #393E46;
+    margin-bottom: 50px;
+ }
+
+.blog-content {
+    line-height: 1.6;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #393E46;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+  }
+  
+  button{
+    border:none;
+    border-radius:5px;
+    padding:15px 30px;
+    font-size:18px;
+    cursor:pointer;
+  }
+  
+  button:hover{
+    background-color:#393E46;
+  }
+  
+  .dropdown-options {
+    display: none;
+    position: absolute;
+    overflow: auto;
+    background-color:#fff;
+    border-radius:5px;
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+  }
+  
+  .dropdown:hover .dropdown-options {
+    display: block;
+  }
+  
+  .dropdown-options a {
+    display: block;
+    color: #393E46;
+    padding: 5px;
+    text-decoration: none;
+    padding:20px 40px;
+  }
+  
+  .dropdown-options a:hover {
+    color: #0a0a23;
+    background-color: #c1c3c6;
+    border-radius:5px;
+  }
+
+  .table_blog{
+    margin-left: 20%;
+  }
+
+     
+
+.blog-container-manager td {
+    padding: 10px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+/* Styles specifically for blog-container-manager */
+.blog-container-manager {
+    /* Add your custom styles here */
+    border: 2px solid #393E46;
+    background-color: #f8f8f8;
+}
+
+/* Styles for blog title inside blog-container-manager */
+.blog-container-manager .blog-title {
+    color: #393E46;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Styles for blog description inside blog-container-manager */
+.blog-container-manager .blog-description {
+    color: #666;
+    margin-bottom: 50px;
+}
+
+/* Styles for buttons inside blog-container-manager */
+.blog-container-manager .btn {
+    background-color: #393E46;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.blog-container-manager .btn:hover {
+    background-color: #393E46;
+}
+.blog-containerr {
+    max-width: 70%;
+    margin: 5% 10%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+ hr{
+        height: 1px;
+        background-color: #e7e4e4;
+        border: none;
+    }

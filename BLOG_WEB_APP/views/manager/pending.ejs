@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Manager</title>
+</head>
+ 
+<body>
+  <div class="container">
+    <h1 class="mb-4">Blog Articles</h1>
+    <a href="/approved" class="btn btn-primary">Approved</a>
+    <a href="/pending" class="btn btn-danger">Pending</a>
+    <div class="btn-group float-right">
+        <button type="button" class="btn btn-primary  dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+          Manager
+        </button>
+        <ul class="dropdown-menu">
+           <li><a class="dropdown-item" href="/logout">Logout</a></li>
+         </ul>
+      </div>
+       <% blogs.forEach((blog) => { %>
+        <% if(blog.approved==0){ %>
+          <div class="card mt-4">
+            <div class="card-body">
+                <h4 class="card-title"><a href="/manager/blogContent/<%= blog._id %>"> <%= blog.title %></a></h4>
+              <div class="card-text mb-2 text-secondary"><%= blog.description %></div>
+              <a onclick="deleteFunction()" href="/approve_blog/<%= blog._id %>" class="btn btn-info">Approve</a>
+                   <td> 
+             </div>
+          </div>
+       <% } else { %>
+        
+          <% } %>
+          <% }); %>
+          
+        <script>
+          function deleteFunction() {
+            confirm("Approve Blog");
+          }
+          </script> 
+           
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script> </div>
+</body>
+</html>

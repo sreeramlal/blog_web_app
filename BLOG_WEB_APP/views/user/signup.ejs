@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+ <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="/css/user-login.css">
+  </head>
+  <body>
+    <div class="center">
+      <h1>Signup</h1>
+
+      <form action="/user/signup" method="POST">
+        <div class="txt_field">
+          <input type="email" name="sp_id" required>
+          <span></span>
+          <label>Email ID</label>
+        </div>
+        <div class="txt_field">
+          <input name="sp_password" type="password" required pattern=".{8,}" title="Must contain least 8 characters">
+          <span></span>
+          <label>Password</label>
+        </div>
+        <div class="txt_field">
+         <input name="cp_password" type="password" required>
+         <span></span>
+         <label>Conform Password</label>
+       </div>
+         <input type="submit" value="Signup">
+        <div class="signup_link">
+          Are you a member? <a href="/user/login">Login</a>
+        </div>
+      </form>
+    </div>
+
+  </body>
+</html>
